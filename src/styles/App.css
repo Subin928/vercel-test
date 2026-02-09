@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #f8f9fa;
+  color: #333;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+/* ===== Header ===== */
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 20px 40px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+}
+
+header a:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* ===== Main ===== */
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.main h1 {
+  font-size: 42px;
+  margin-bottom: 16px;
+}
+
+.main button {
+  padding: 12px 32px;
+  border: none;
+  background: #3498db;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ===== Product ===== */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.product-item {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+.product-item li:last-child {
+  color: #777;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ===== Detail ===== */
+.product-detail,
+.student-detail {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 40px;
+  background: white;
+  border-radius: 14px;
+}
+
+/* ===== Student ===== */
+.student-layout {
+  display: flex;
+  min-height: calc(100vh - 60px);
+  background-color: #f5f6f8; /* 배경만 살짝 다르게 */
+  font-family: sans-serif;
+}
+
+/* 왼쪽 메뉴 */
+.student-nav {
+  width: 200px;
+  background-color: #ffffff;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+}
+
+.student-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.student-nav li {
+  margin-bottom: 8px;
+}
+
+.student-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.student-link.active {
+  font-weight: bold;
+}
+
+/* 오른쪽 내용 */
+.student-content {
+  padding: 24px;
+  flex: 1;
+}
+
